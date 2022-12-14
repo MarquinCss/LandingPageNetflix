@@ -1,0 +1,200 @@
+@font-face {
+    font-family:Net;
+      src: url(net.otf)
+}
+
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
+*{
+padding:0;
+Margin:0;
+text-decoration:none;
+box-sizing: border-box;
+
+}
+
+body{
+overflow-x:hidden;
+background-image:url("img/fundo.jpg");
+object-fit: cover;
+background-size:100%;
+color:white;
+font-size:100%
+}
+
+.cabecalho-imagem{
+position:relative;
+bottom:75px;
+
+}
+
+  img{
+width:300px;
+height:300px;
+transition:transform .5s;
+}
+
+img:hover{
+    transform:scale(1.1);
+}
+
+h1{
+ 
+    font-size:40px;
+    position:relative;
+    right:30px;
+
+}
+
+h2{
+    font-size:40px;
+     position:relative;
+     left:10px;
+
+}
+
+
+    .formu {
+        width: 100%;
+        max-width: 30rem;
+        position:relative;
+		left:340px;
+		font-family: 'Gotham Black', sans-serif;
+}
+
+
+
+input,textarea,button {
+  width: 100%;
+  font: inherit;
+  padding: 1.25rem;
+  font-weight: 700;
+  font-family: 'Gotham Black', sans-serif;
+}
+
+input,
+textarea {
+	position:relative;
+	left:-5px;
+  margin-bottom: 1rem;
+  color: red;
+  background: #323644;
+  border: 0.125rem solid transparent;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width:200px;
+  height:50px;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+  border-color:red;
+  box-shadow: 0 0 0 0.3125rem red;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  color:white;
+  font-size:30px;
+  width:300px;
+  height:200px;
+}
+
+
+button {
+  border: none;
+  color: white;
+  background: red;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Gotham Black', sans-serif;
+  width:150px  ;
+  height:60px  ;
+}
+
+button:hover,
+button:focus {
+  outline: none;
+  background:red;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background: red;
+}
+
+.conteudo{
+font-family: 'Gotham Black', sans-serif;
+width:600px;
+height:100px;
+    position:relative;
+    bottom:90px;
+    left:90px
+}
+
+.enter{
+border-radius:10%;	
+position:relative;
+left:1600px;
+bottom:440px;
+text-align: center;
+font-family: 'Gotham Black', sans-serif;
+font-size:27px;}
+
+.email{
+	position:relative;
+	top:6px;
+right:20px;
+font-size:32px;
+}
+
+
+
+.artigo1{
+	background:black;
+}
+
+
+.artigo2{
+	background:black;
+
+}
+
+.tudo{
+  position:relative;
+  top:100px;
+}
+
+
+ .mao{
+  position:absolute;
+  animation: go-back 3s infinite;
+  left:800px;
+top:800px }
+ 
+@keyframes go-back {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(300px);
+  }
+}
+
+.meninas{
+  width:300px;
+  height:400px
+}
+
+footer{
+display:flex;
+align-items: flex-end;
+justify-content: center;
+text-align: center;
+background-image:url(img/fundo.png);
+width:100%;
+
+
+}
