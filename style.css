@@ -79,6 +79,104 @@ body {
 }
 
 
+/*Formulário*/
+.form-mail {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  position: relative;
+  color: white;
+}
+
+
+.form-mail .label-em {
+  font-size: 14px;
+  padding-left: 10px;
+  padding-top:10px;
+  position: absolute;
+  top: 4.5px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.input-em {
+  width: 400px;
+  height: 55px;
+  border:1px solid white;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 15px;
+background-color: #0000007d;
+
+}
+
+.input-em:focus {
+  border: 1px solid white;
+  padding:12px;
+  color: #fff;
+  color: #fff;
+}
+
+.form-mail .input-em:valid ~ .label-em,
+.form-mail .input-em:focus ~ .label-em {
+  transition: 0.3s;
+  padding-right: 5px;
+  padding-top:2px;
+  transform: translateY(-8px);
+}
+
+
+.form-mail .input-em:valid,
+.form-mail .input-em:focus {
+  box-shadow: 3px 3px 10px #000000,
+  -1px -1px 6px #ffffff66,
+  inset 3px 3px 10px #000000,
+  inset -1px -1px 6px #ffffff66;
+}
+.infor{
+	display:flex;
+    flex-direction:row;
+	gap:10px;
+}
+
+
+input[type="submit"]{
+width:120px;
+text-align: center;
+outline: none;
+border: none;
+border-radius: 4px;
+height:52px;
+color:#fff;
+font-size: 23px;
+background: linear-gradient(to top,
+  #c50707 , 
+  #ff0000 ,
+  #c50909 );
+
+}
+
+input[type="submit"]:active{
+background: linear-gradient(to top,
+  #c50707 , 
+  #a60606 ,
+  #9c0606 );
+  transform: translateY(2px);
+
+}
+
+.container .forms{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+
+
+
 .wandinha{
 position:absolute;
 right:0;
@@ -86,21 +184,21 @@ bottom:0;
 height:600px;
 }
 
-.container .forms{
-	display:flex;
-	flex-direction:row;
-	gap:20px;
+
 	
-}
+
+
 .container .imagem-titulo {
     max-width: 500px;
 }
 
+
+/*Botão inferior*/
 .enter{
   position: absolute;
   top: 30px; 
   right: 10px;
-  width:85px;
+  width:90px;
   height:37px;
   padding: 10px 20px;
   background-color: #c11119;
@@ -160,13 +258,11 @@ a{
 /*Responsividade*/
 
 @media (max-width: 1200px) {
-    body {
-       background-color:#EE82EE;
-    }
-
-    .fundo-video {
-        display: none;
-    }
+   
+   .wandinha{
+	  display:none;
+   }
+   
 
     .container {
         flex-wrap: wrap;
@@ -186,17 +282,23 @@ a{
 		font-size:30px;
     }
 
-    .container .botao-trailer {
-        background-color: #263238;
-		
-    }
+	.infor{
+    flex-direction:column;
+	gap:25px;
+	justify-content:center;
+	align-items:center;
+}
+
+    .input-em{
+		text-align:center;
+	}
 }
 
 @media (max-width: 500px) {
     .cabecalho {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
+        gap: 0px;
     }
 
     .container .imagem-titulo {
